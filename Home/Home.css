@@ -484,3 +484,72 @@ body {
     opacity: 0;
   }
 }
+
+
+
+/* Mobile Styles (Applied only for screens smaller than 768px) */
+@media (max-width: 768px) {
+  /* Typing Animation */
+  .typing-animation {
+    font-size: 1.8rem; /* Smaller font size for mobile */
+  }
+
+  /* Profile Section */
+  .profile-section {
+    flex-direction: column; /* Stack photo and bio vertically */
+    align-items: center;
+    gap: 20px; /* Reduce gap between photo and bio */
+  }
+
+  .profile-photo {
+    width: 150px; /* Smaller photo for mobile */
+    height: 150px;
+  }
+
+  .bio {
+    text-align: center; /* Center-align bio text */
+    max-width: 90%; /* Limit bio width for better readability */
+  }
+
+  /* Navigation Bar */
+  .navbar {
+    flex-direction: column; /* Stack navbar items vertically */
+    padding: 10px;
+  }
+
+  .navbar-name {
+    margin-bottom: 10px; /* Add space below the name */
+  }
+
+  .navbar-links {
+    flex-direction: column; /* Stack links vertically */
+    gap: 10px; /* Reduce gap between links */
+  }
+
+  /* Terminal Button */
+  .terminal-button {
+    bottom: 10px;
+    right: 10px;
+    font-size: 0.9rem; /* Smaller button text */
+    padding: 8px 16px; /* Adjust button padding */
+  }
+
+  /* Terminal Popup */
+  .terminal-window {
+    width: 95%; /* Make terminal popup almost full width */
+    height: 70%; /* Adjust height for mobile */
+  }
+
+  .terminal-header {
+    font-size: 1rem; /* Smaller header text */
+  }
+
+  .terminal-body {
+    font-size: 0.9rem; /* Smaller terminal text */
+  }
+
+  /* Access Granted Overlay */
+  .access-granted-text {
+    font-size: 2.5rem; /* Smaller text for mobile */
+  }
+}
