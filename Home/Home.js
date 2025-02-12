@@ -92,3 +92,9 @@ terminalInput.addEventListener('keydown', (event) => {
     terminalOutput.scrollTop = terminalOutput.scrollHeight; // Scroll to bottom
   }
 });
+
+// scripts.js
+function toggleNav() {
+  const navbarLinksContainer = document.querySelector('.navbar-links-container');
+  navbarLinksContainer.classList.toggle('active'); // Toggle visibility
+}

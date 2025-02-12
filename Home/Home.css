@@ -486,7 +486,6 @@ body {
 }
 
 
-
 /* Mobile Styles (Applied only for screens smaller than 768px) */
 @media (max-width: 768px) {
   /* Typing Animation */
@@ -511,20 +510,54 @@ body {
     max-width: 90%; /* Limit bio width for better readability */
   }
 
-  /* Navigation Bar */
-  .navbar {
-    flex-direction: column; /* Stack navbar items vertically */
-    padding: 10px;
-  }
+/* Navigation Bar */
+.navbar {
+  flex-direction: row; /* Keep name and button in a row */
+  align-items: center;
+  padding: 10px;
+  position: relative; /* For positioning the dropdown menu */
+}
 
-  .navbar-name {
-    margin-bottom: 10px; /* Add space below the name */
-  }
+.navbar-name {
+  margin-bottom: 0; /* Remove margin for mobile */
+}
 
-  .navbar-links {
-    flex-direction: column; /* Stack links vertically */
-    gap: 10px; /* Reduce gap between links */
-  }
+.hamburger-button {
+  display: block; /* Show hamburger button */
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #0f0;
+  cursor: pointer;
+  margin-left: auto; /* Push button to the right */
+}
+
+.navbar-links-container {
+  display: none; /* Hide links by default */
+  position: absolute;
+  top: 100%; /* Position below the navbar */
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9); /* Match navbar background */
+  border-top: 2px solid #0f0;
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+.navbar-links {
+  flex-direction: column; /* Stack links vertically */
+  gap: 10px; /* Reduce gap between links */
+  padding: 10px 0; /* Add padding for spacing */
+}
+
+.navbar-links li {
+  text-align: center; /* Center-align links */
+}
+
+/* Show navbar links when hamburger button is clicked */
+.navbar-links-container.active {
+  display: block;
+}
+}
 
   /* Terminal Button */
   .terminal-button {
@@ -552,4 +585,3 @@ body {
   .access-granted-text {
     font-size: 2.5rem; /* Smaller text for mobile */
   }
-}
