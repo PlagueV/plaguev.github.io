@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Senior Portfolio - Adrian Sigala</title>
+  <link rel="stylesheet" href="Home.css">
+</head>
+
+<body>
+  <!-- Access Granted Overlay -->
+<div class="access-granted-overlay">
+  <div class="access-granted-text">Access Granted</div>
+</div>
+
+  <!-- Matrix Background Effect -->
+  <div class="matrix-effect"></div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="navbar-name">Adrian Sigala</div>
+    <ul class="navbar-links">
+      <li><a href="letter-of-intent.html">Letter of Intent</a></li>
+      <li><a href="physical-project.html">Physical Project</a></li>
+      <li><a href="research-paper.html">Research Paper</a></li>
+      <li><a href="pre-employment.html">Pre-Employment</a></li>
+      <li><a href="writing-samples.html">Writing Samples</a></li>
+      <li><a href="competencies.html">Competencies</a></li>
+      <li><a href="#community-service">Community Service</a></li>
+    </ul>
+  </nav>
+
+  <!-- Home Page Content -->
+  <main class="home-page">
+    <!-- Typing Animation for Header -->
+    <h1 class="typing-animation">Welcome to My Senior Portfolio</h1>
+
+    <!-- Photo and Bio Section -->
+    <section class="profile-section">
+      <!-- Profile Photo Section -->
+<div class="profile-photo">
+  <img src="your-photo.jpg" alt="Your Name">
+  <div class="code-border"></div> <!-- Animated code border -->
+  <div class="error-overlay">Error</div> <!-- Error text -->
+  <div class="error-icon">!</div> <!-- Exclamation mark in a triangle -->
+</div>
+      <div class="bio">
+        <h2>About Me</h2>
+        <p>
+          Hi, I'm Adrian, a passionate coder and problem solver. This portfolio showcases my journey, projects, and
+          skills from Weber Institute. Explore my work and get to know me better!
+        </p>
+      </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section class="featured-projects">
+      <h2>Featured Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>Project 1</h3>
+          <p>A brief description of your first project. Highlight the technologies used and the problem it solves.</p>
+          <a href="#" class="project-link">View Project</a>
+        </div>
+        <div class="project-card">
+          <h3>Project 2</h3>
+          <p>A brief description of your second project. Showcase your creativity and technical skills.</p>
+          <a href="#" class="project-link">View Project</a>
+        </div>
+        <div class="project-card">
+          <h3>Project 3</h3>
+          <p>A brief description of your third project. Demonstrate your ability to work in a team or independently.</p>
+          <a href="#" class="project-link">View Project</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills">
+      <h2>Skills</h2>
+      <div class="skills-list">
+        <div class="skill-item">HTML/CSS</div>
+        <div class="skill-item">JavaScript</div>
+        <div class="skill-item">Python</div>
+        <div class="skill-item">Java</div>
+      </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="achievements">
+      <h2>Achievements</h2>
+      <ul>
+        <li>Certified IT Specialist HTML/CSS</li>
+        <li>Certified IT Specialist JavaScript</li>
+        <li>Pending Certified IT Specialist Python</li>
+        <li>Pending Certified IT Specialist Unity</li>
+      </ul>
+    </section>
+
+    <!-- Contact Information Section -->
+    <section class="contact">
+      <h2>Contact Me</h2>
+      <p>If you'd like to get in touch, feel free to reach out!</p>
+      <div class="contact-links">
+        <a href="mailto:andresigala07@gmail.com" class="contact-link">Email</a>
+        <a href="https://linkedin.com/in/yourprofile" class="contact-link">LinkedIn</a>
+      </div>
+    </section>
+  </main>
+
+    <!-- Terminal Button -->
+    <button class="terminal-button" onclick="openTerminal()">Open Terminal</button>
+
+    <!-- Terminal Popup -->
+    <div class="terminal-overlay">
+      <div class="terminal-window">
+        <div class="terminal-header">
+          <span>Command Prompt</span>
+          <button class="close-button" onclick="closeTerminal()">×</button>
+        </div>
+        <div class="terminal-body">
+          <div class="terminal-output">
+            <p>Microsoft Windows [Version 10.0.19041.928]</p>
+            <p>(c) Microsoft Corporation. All rights reserved.</p>
+            <p>C:\Users\[Your Name]></p>
+          </div>
+          <div class="terminal-input">
+            <span>C:\Users\[Your Name]></span>
+            <input type="text" id="terminal-input" autofocus>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- JavaScript for Animations -->
+  <script src="Home.js"></script>
+</body>
+
+</html>
