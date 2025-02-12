@@ -80,7 +80,7 @@ body {
 .typing-animation {
   font-size: 2.5rem;
   overflow: hidden;
-  white-space: nowrap;
+  white-space: nowrap; /* Keep text on one line for desktop */
   border-right: 0.15em solid #0f0;
   animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
   text-align: center;
@@ -487,12 +487,15 @@ body {
 
 
 /* Mobile Styles (Applied only for screens smaller than 768px) */
+/* Mobile Styles (Applied only for screens smaller than 768px) */
 @media (max-width: 768px) {
   .typing-animation {
     font-size: 1.8rem; /* Smaller font size for mobile */
     white-space: normal; /* Allow text to wrap */
     animation: none; /* Disable typing animation on mobile */
     border-right: none; /* Remove blinking cursor */
+    text-align: left; /* Align text to the left for better readability */
+    padding: 0 20px; /* Add more padding for smaller screens */
   }
 }
 
