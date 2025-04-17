@@ -1,0 +1,471 @@
+/* Global Styles */
+:root {
+    --primary: #2E7D32;
+    --primary-light: #4CAF50;
+    --secondary: #FFC107;
+    --dark: #333;
+    --light: #f9f9f9;
+    --gray: #e0e0e0;
+    --text: #444;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: var(--text);
+    background-color: #f5f5f5;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Poppins', sans-serif;
+    color: var(--dark);
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(135deg, var(--primary), var(--primary-light));
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-top: 1rem;
+    color: white;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.logo {
+    height: 80px;
+    width: auto;
+}
+
+/* Info Box */
+.info-box {
+    background: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.icon-box {
+    background-color: var(--primary);
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    flex-shrink: 0;
+}
+
+/* Steps Section */
+.steps {
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.steps h2 {
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.step {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--gray);
+}
+
+.step:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.step-number {
+    background-color: var(--primary);
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+    margin-top: 0.3rem;
+}
+
+.step-content h3 {
+    color: var(--primary);
+}
+
+.tip {
+    background-color: #FFF8E1;
+    padding: 0.8rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.tip i {
+    color: var(--secondary);
+}
+
+/* Screenshot Styles */
+.screenshot-container {
+    margin: 1.5rem 0;
+    border: 1px solid var(--gray);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.screenshot-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 1px solid var(--gray);
+}
+
+.screenshot-caption {
+    padding: 0.8rem;
+    background-color: #f9f9f9;
+    font-size: 0.9rem;
+    color: #666;
+    text-align: center;
+    margin: 0;
+}
+
+/* FAQ Section */
+.faq {
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.faq h2 {
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.faq-item {
+    margin-bottom: 1rem;
+    border: 1px solid var(--gray);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.faq-question {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    background-color: white;
+    border: none;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color: var(--dark);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+.faq-question:hover {
+    background-color: #f5f5f5;
+}
+
+.faq-question i {
+    transition: transform 0.3s;
+}
+
+.faq-question.active i {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    padding: 0 1.5rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, padding 0.3s ease;
+    background-color: #f9f9f9;
+}
+
+.faq-answer.show {
+    padding: 1rem 1.5rem;
+    max-height: 500px;
+}
+
+/* CTA Section */
+.cta {
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--primary);
+    color: white;
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s;
+    margin-top: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    background-color: var(--primary-light);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    text-decoration: none;
+}
+
+.small {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 1rem;
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark);
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+footer a {
+    color: var(--secondary);
+}
+
+.copyright {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    .info-box {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .step {
+        flex-direction: column;
+    }
+    
+    .step-number {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    header h1 {
+        font-size: 1.8rem;
+        line-height: 1.2;
+    }
+    
+    .subtitle {
+        font-size: 1rem;
+    }
+    
+    .logo {
+        height: 60px;
+    }
+    
+    .info-box {
+        padding: 1rem;
+        gap: 1rem;
+    }
+    
+    .icon-box {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+    }
+    
+    .steps, .faq {
+        padding: 1.5rem 1rem;
+    }
+    
+    .step {
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+    
+    .step-number {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+    }
+    
+    .btn {
+        padding: 0.7rem 1.5rem;
+        font-size: 0.9rem;
+    }
+    
+    .faq-question {
+        padding: 0.8rem 1rem;
+        font-size: 0.95rem;
+    }
+    
+    .faq-answer.show {
+        padding: 0.8rem 1rem;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    /* Adjustments for tablets if needed */
+}
+
+/* Orientation-specific adjustments */
+@media screen and (max-width: 768px) and (orientation: landscape) {
+    header {
+        padding: 1.5rem 0;
+    }
+    
+    .info-box {
+        flex-direction: row;
+    }
+}
+
+/* Prevent text size inflation on mobile */
+html {
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+/* Improve touch targets */
+a, button, .faq-question {
+    min-height: 44px; /* Recommended minimum touch target size */
+    min-width: 44px;
+}
+
+/* Better scrolling behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Optimize image loading */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Improve button visibility on mobile */
+.btn {
+    position: relative;
+    z-index: 1;
+}
+
+/* Better spacing for mobile */
+body {
+    padding-bottom: env(safe-area-inset-bottom);
+}
+
+/* Safari specific fixes */
+@supports (-webkit-touch-callout: none) {
+    body {
+        /* Safari padding fix */
+        padding-top: env(safe-area-inset-top);
+        padding-left: env(safe-area-inset-left);
+        padding-right: env(safe-area-inset-right);
+    }
+}
+
+/* Prevent zoom on form inputs on mobile */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    select,
+    textarea,
+    input {
+        font-size: 16px;
+    }
+}
+
+/* Better FAQ item spacing on mobile */
+@media (max-width: 768px) {
+    .faq-item {
+        margin-bottom: 0.5rem;
+    }
+}
+
+/* Screenshot container mobile optimization */
+@media (max-width: 768px) {
+    .screenshot-container {
+        margin: 1rem 0;
+    }
+    
+    .screenshot-caption {
+        padding: 0.6rem;
+        font-size: 0.8rem;
+    }
+}
